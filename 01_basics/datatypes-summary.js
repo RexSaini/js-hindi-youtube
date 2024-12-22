@@ -28,3 +28,31 @@ console.log(typeof myFunction); // function
 
 let myTemperature = null
 console.log(typeof myTemperature); // it will show object
+
+
+// Memory
+/*
+Stack - Primitive datetypes (in stack copy is given)
+Heap - Non primitive datatypes (in heap reference is given)
+*/
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anotherName = myYoutubename
+anotherName = "chaiaurcode"
+
+console.log(myYoutubename); // hiteshchoudharydotcom
+console.log(anotherName); // chaiaurcode
+
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "xyz@gmail.com"
+
+console.log(userOne.email); // xyz@gmail.com
+console.log(userTwo.email); // xyz@gmail.com
+
